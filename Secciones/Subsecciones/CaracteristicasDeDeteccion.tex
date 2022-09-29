@@ -1,7 +1,7 @@
   \subsection{Características de detección}
 
     El esquema de conexiones que se debe implementar con los dispositivos antes mencionados, se puede observar en
-    la Figura~\ref{fig:EsquemaConexiones}.
+    la Figura~\ref{fig:EsquemaConexiones}. 
 
     \begin{figure}[H]
       \centering
@@ -10,6 +10,9 @@
       \label{fig:EsquemaConexiones}
     \end{figure}
 
+    Luego, en la Figura~\ref{fig:InstrumentosParaFI} se encuentra la implementación del experimento. Además, a 
+    modo de apreciar el funcionamiento del generador de barrido y marcas, en la Figura~\ref{fig:EspectroaFI} se 
+    logra ver la respuesta en frecuencia junto con la marca.
 
     \begin{figure}[H]
       \centering
@@ -29,7 +32,8 @@
       \label{fig:MediccionEspectroFIDetector}
     \end{figure}
 
-    Medición de la frecuencia mínima del amplificador de FI y del detector........
+    Ahora, se procede a la medición de la frecuencia mínima del conjunto del detector y el amplificador de FI,
+    cuyo valor es $\mathbf{f_{FImin} = 10,25~MHz}$, tal y como se observa en la Figura~\ref{fig:FrecuenciaMinFI}.
 
     \begin{figure}[H]
       \centering
@@ -49,7 +53,9 @@
       \label{fig:FrecuenciaMinFI}
     \end{figure}
 
-    Medición de la frecuencia central del amplificador de FI y del detector........
+    De la misma forma, se lleva la marca a la posición central del espectro, y se mide la frecuencia central 
+    del detector y el amplificador de FI. En la Figura~\ref{fig:FrecuenciaCenFI} se puede ver que dicha 
+    frecuencia medida es $\mathbf{f_{FIcen} = 10,45~MHz}$.
 
     \begin{figure}[H]
       \centering
@@ -69,7 +75,8 @@
       \label{fig:FrecuenciaCenFI}
     \end{figure}
 
-    Medición de la frecuencia máxima del amplificador de FI y del detector........
+    Por último, la frecuencia máxima en cuestión se puede apreciar en la Figura~\ref{fig:FrecuenciaMaxFI}, 
+    la cual da un valor de $\mathbf{f_{FImax} = 10,65~MHz}$.
 
     \begin{figure}[H]
       \centering
@@ -89,3 +96,18 @@
       \label{fig:FrecuenciaMaxFI}
     \end{figure}
 
+    Los valores obtenidos durante esta experiencia se encuentran en forma tabulada en la Tabla~\ref{tab:MedicionesFI}.
+
+        \begin{table}[H]
+            \small
+            \centering
+            \begin{tabular}{cccc}
+                 \toprule
+                 \textbf{Frec. central} $\mathbf{[MHz]}$ &  \textbf{Frec. mín.} $\mathbf{[MHz]}$ & 
+                  \textbf{Frec. máx.} $\mathbf{[MHz]}$ &  $\mathbf{\triangle}$ \textbf{f} $\mathbf{[MHz]}$  \\ \midrule
+                 10,45   &   10,25   & 10,65   & 0,4 \\ 
+                 \bottomrule
+            \end{tabular}
+            \caption{Mediciones de FI obtenidas.}
+            \label{tab:MedicionesFI}
+        \end{table}
