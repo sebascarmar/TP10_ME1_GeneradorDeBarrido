@@ -1,5 +1,42 @@
   \subsection{Características de detección}
 
+  Para la presente experiencia, se determina la respuesta en frecuencia, del conjunto 
+  amplificador de frecuencia intermedia y el detector de frecuencia modulada del 
+  receptor.
+
+  En primer lugar, se debe configurar el osciloscopio de la siguiente forma: 
+  Controles de ganancia en posición media, y modo X-Y. Se necesita modificar 
+  la amplitud de los canales varias veces durante la experiencia, por lo que 
+  no es crítica la posición de éstas.
+
+  Luego, se ineycta la salida del generador de barrido en la 
+  antena del receptor, la cual inicialmente está seteada en $10,7~MHz$.
+
+  Para no desarmar el receptor, se toma la salida del mismo en el conector 
+  de audífonos, a partir de éste punto, se debe tener en cuenta la influencia 
+  del control del volumen en la medición. Posteriormente, se ajusta el dial 
+  del receptor en una posición en la cual no haya emisión sintonizada.
+
+  Finalmente, se configura la salida del generador como muestra la tabla 
+  \ref{tab:ControlesGenExp2}.
+
+  \begin{table}[H] 
+    \centering 
+    \begin{tabular}[H]{|c|c|c|}
+      \textbf{Comando} & \textbf{Posición} & \textbf{Comentarios} \\  \hline  
+          Mod.Select    &       Off         &     Sin modulación  \\  \hline
+          Marker Size   &       Mínimo      &   El botón pulsado  \\  \hline
+          Frec. Rang    &      B            &  Banda $6~MHz$ a $18~MHz$ \\  \hline
+          Sweep Width   &   Posición media  &       -             \\  \hline
+          Aten. por pasos &       1         &       -             \\  \hline
+          Aten. fino    &   Posición media  &       -             \\  \hline
+          Marker Freq.  &   $10,7MHz$       & Frec. Central de  FI \\  \hline
+          Sep Freq.     & FM-IF ($10,7~MHz$) & Frec. Central de  FI \\  \hline
+    \end{tabular}
+    \caption{Controles del generador para Experimento 2.}
+    \label{tab:ControlesGenExp2}
+  \end{table}
+
     El esquema de conexiones que se debe implementar con los dispositivos antes mencionados, se puede observar en
     la Figura~\ref{fig:EsquemaConexiones}. 
 
