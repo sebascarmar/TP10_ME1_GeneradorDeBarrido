@@ -1,15 +1,17 @@
   \section{Conclusiones}
 
-  Para determinar la frecuencia del oscilador local, se puede proceder de la 
-  siguiente manera. Conociendo las \(f_{min}\) y \(f_{max}\) del receptor y
+  Para determinar la frecuencia del oscilador local, se parte sabiendo las frecuencias 
+  \(f_{min}\) y \(f_{max}\) del receptor, y
   aplicando el cálculo 
     \begin{equation*}
       FI = \dfrac{f_{max} - f_{min}}{2} + k = 10,7~[Mhz]~,
     \end{equation*}
-
-  donde \(k = 0,7\) para el estándar de FM, lo cual da como resultado una 
-  \(FI = 10,7 Mhz\). Por último para determinar la frecuencia del oscilador local
+  donde \(k = 0,7\) para el estándar de FM.
+  
+  Luego, debido a que el receptor es superheterodino, la 
+  frecuencia del oscilador local se determina de la siguiente 
+  manera
     
     \begin{equation*}
-      f_{osc} = f_{sintonia} \pm FI .
+      f_{osc} = f_{sintonia} +FI .
     \end{equation*}
