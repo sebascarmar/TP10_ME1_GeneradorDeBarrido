@@ -15,26 +15,23 @@
         f_{osc} = f_{sintonia} +FI~.
       \end{equation*}
 
-    Si se analizara por separado la respuesta en frecuencia del amplificador \(FI\), lo que
-    se obtendría seria un solo pulso como se muestra a la izquierda de la Figura 
-    \ref{fig:FdeTReceptor}, la cual estará centrada en \(10,7 MHz\) y debido a que 
+    Si se analizara por separado la respuesta en frecuencia del amplificador de \(FI\), lo que
+    se obtendría sería un solo pulso, como se muestra a la izquierda de la Figura~\ref{fig:FdeTReceptor}.
+    Dicha respuesta estará centrada en \(10,7 MHz\), y debido a que 
     posee una desviación de frecuencia de (\(\triangle f = 0,4 MHz\), el espectro que
-    se podría llegar a visualizar estaría bastante acotado, esto es propio de la 
-    selectividad que posee el filtro de \(FI\).   
+    se podría llegar a visualizar estaría bastante acotado, lo cual es propio de la 
+    selectividad que posee el amplificador en cuestión.   
     
-    La curva de respuesta de un detector de FM o conversor de frecuencia a tensión 
-    posee dicha forma debido a que, para valores de frecuencia baja de corte el 
-    conversor entrega la mínima tensión y para valores elevados de frecuencia de 
-    corte la tensión es la mas alta.   
+    La curva de respuesta de un detector de FM, o conversor de frecuencia a tensión, 
+    posee dicha forma debido a que, para valores de frecuencia de corte mínima el 
+    conversor entrega la más negativa, y para valores  de frecuencia de 
+    corte máxima la tensión es la más positiva.   
     
-    El generador de barrio y marcas proporciona 2 señales de salidas que poseen ciertas
-    características. la primera señal proviene de la salida \textbf{H}, la cual provee 
-    una señal triangula que es utilizada para el eje horizontal del espectro en 
-    frecuencia, dicha señal es la que se emplea en el canal 1 del osciloscopio. 
+    Para la primer experiencia se vio dos de las señales de salida que proporciona el generador de barrido
+    y marcas. Una de ellas proviene de la salida \textit{H}, la cual se trata de una señal triangular que es
+    utilizada para la generación del chirp, y además, para generar el eje horizontal del espectro en frecuencias.
+    La otra señal proporcionada por la salida  \textit{SWEEP OUT} es la señal modulada en frecuencia, la cual es conectada
+    a la red bajo análisis y genera el barrido en frecuencia. Dicha señal se habilita con la pendiente positiva
+    de la señal triangular antes mencionada, y se inhabilita con la pendiente negativa. Esto tiene como objetivo
+    realizar el barrido en un solo sentido y evitar efectos de histéresis que dificultarían la medición.
 
-    la otra señal proporcionada por la salida  \textbf{SWET OUT} es la señal modulada en 
-    frecuencia (chirp), la cual se conecta al canal 2 del osciloscopio y dicha señal
-    genera el barrio de frecuencia del eje vertical. La misma posee una pendiente de 
-    subida que concuerda con la de la señal del eje horizontal, ademas solo estará 
-    habilitada en su flanco de subida para evitar histéresis (o efecto de doble trazo) 
-    a la hora de ser visualizada en el osciloscopio.   
