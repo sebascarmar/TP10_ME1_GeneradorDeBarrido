@@ -1,13 +1,19 @@
   \section{Conclusiones}
+    Partiendo del diagrama del receptor que se encuentra en la Figura~\ref{fig:ReceptorSimplificado},
+    la inversión que se produce en los espectros obtenidos cuando se trabaja con frecuencias de
+    señales FM y  FI, se justifica debido a que cuando se inyecta esta última, se está
+    salteando la etapa de conversión, y va directo a la etapa de, justamente, el amplificador de FI.
+    Por otro lado, una señal de FM sí pasa por la etapa de conversión, la cual produce una convolución 
+    en frecuencia, que a su vez conlleva a una inversión del espectro.
 
     Para determinar la frecuencia del oscilador local, se parte sabiendo las frecuencias 
     \(f_{min}\) y \(f_{max}\) del receptor, y
     aplicando el cálculo 
       \begin{equation*}
         FI = \dfrac{f_{max} - f_{min}}{2} + k = 
-        \dfrac{(108 - 88)~MHz}{2} + 0,7 \hspace{20pt} \therefore \hspace{20pt} FI = 10,7~[MHz]~,
+        \dfrac{108 - 88~[MHz]}{2} + 0,7~MHz \hspace{20pt} \therefore \hspace{20pt} FI = 10,7~[MHz]~,
       \end{equation*}
-    donde \(k = 0,7\) para el estándar de FM.
+    donde \(k = 0,7~MHz\) para el estándar de FM.
     
     Luego, debido a que el receptor es superheterodino, la frecuencia del oscilador local 
     se determina de la siguiente manera
@@ -17,8 +23,8 @@
 
     Si se analizara por separado la respuesta en frecuencia del amplificador de \(FI\), lo que
     se obtendría sería un solo pulso, como se muestra a la izquierda de la Figura~\ref{fig:FdeTReceptor}.
-    Dicha respuesta estará centrada en \(10,7 MHz\), y debido a que 
-    posee una desviación de frecuencia de (\(\triangle f = 0,4 MHz\)), el espectro que
+    Dicha respuesta estará centrada en \(10,7~MHz\) aproximadamente, y debido a que 
+    posee una desviación de frecuencia de \(\triangle f = 0,4~MHz\), el espectro que
     se podría llegar a visualizar estaría bastante acotado, lo cual es propio de la 
     selectividad que posee el amplificador en cuestión.   
     
